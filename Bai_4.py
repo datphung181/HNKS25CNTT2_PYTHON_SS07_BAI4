@@ -1,3 +1,19 @@
+# input: nhập số lượng phiếu và 4 dữ liệu của từng phiếu
+# output: in phiếu hợp lệ, nếu ko, thông báo ra lỗi
+# cách làm
+# B1: Nhập số lượng phiếu n
+# B2: Nếu n <= 0 -> báo lỗi và kết thúc
+# B3: Lặp n lần:
+#     Nhập chuỗi đăng ký
+#     Tách chuỗi theo "|"
+#     Nếu không đủ 4 phần -> báo lỗi, bỏ qua
+#     Chuẩn hóa
+#     Kiểm tra:
+#         Nếu email không có "@": báo lỗi, bỏ qua
+#         Nếu len(student_id) < 5: báo lỗi, bỏ qua
+#     In thông tin chuẩn hóa
+#     Tạo mã xác nhận
+
 quantity_input = input("Enter the number of registration forms: ")
 
 if not quantity_input.isdigit() or int(quantity_input) <= 0:
